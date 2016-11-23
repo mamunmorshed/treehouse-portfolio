@@ -27,6 +27,16 @@
                 </div>
                 <?php endif ?>
                 <?php the_content(); ?>
+                <hr>
+                <p>
+                <?php if (get_previous_post_link()): ?>
+                  <?php previous_post_link(); ?> |
+                <?php endif ?>
+                 <a href="<?php echo bloginfo( 'url' ).'/blog'; ?>">Back To Blog</a>
+                 <?php if (get_next_post_link()): ?>
+                   | <?php next_post_link(); ?>
+                <?php endif ?>
+                </p>
                 <?php comments_template(); ?>
               </article>
 
