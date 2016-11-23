@@ -30,7 +30,7 @@
 
               <p>
                 <?php previous_post_link(); ?>
-                 <br>| <a href="<?php bloginfo( 'url' ).'/portfolio'; ?>">Back To Portfolio</a> |<br>
+                 <br>| <a href="<?php echo bloginfo( 'url' ).'/portfolio'; ?>">Back To Portfolio</a> |<br>
                 <?php next_post_link(); ?>
               </p>
 

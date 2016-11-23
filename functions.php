@@ -8,8 +8,14 @@ if (!function_exists('treehouse_portfolio_setup')) {
 			'footer-menu' => __( 'Footer Menu')
 		 ) );
 	}
+
 }
 add_action( 'after_setup_theme', 'treehouse_portfolio_setup' );
+
+function thp_mm_excerpt_length( $length ){
+	return 16;
+}
+add_filter( 'excerpt_length', 'thp_mm_excerpt_length', 999 );
 
 
 function thp_mm_enqueue_css(){
